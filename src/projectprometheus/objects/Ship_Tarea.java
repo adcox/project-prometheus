@@ -15,14 +15,11 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  To contact me, send an email to andrewandstuff@gmail.com or visit 
- *  <http://andrew.swcox.com/Of_Andrew_and_Stuff/Programming.html>
  */
 
-package projectprometheus.objects;
+package com.adcox.projectprometheus.objects;
 
-import projectprometheus.userInterface.ProjectPrometheus;
+import com.adcox.projectprometheus.userInterface.ProjectPrometheus;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;

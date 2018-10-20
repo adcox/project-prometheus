@@ -15,17 +15,14 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  To contact me, send an email to andrewandstuff@gmail.com or visit 
- *  <http://andrew.swcox.com/Of_Andrew_and_Stuff/Programming.html>
  */
-package projectprometheus.levels;
+package com.adcox.projectprometheus.levels;
 
 import java.awt.Color;
 import java.awt.Point;
 import java.util.ArrayList;
-import projectprometheus.objects.Blockade;
-import projectprometheus.objects.Supergate;
+import com.adcox.projectprometheus.objects.Blockade;
+import com.adcox.projectprometheus.objects.Supergate;
 
 /**
  *

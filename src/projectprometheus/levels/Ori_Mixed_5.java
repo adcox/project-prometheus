@@ -1,7 +1,6 @@
-
 /**
  *  Project Prometheus: A Stargate SG-1 version of Space Invaders
- * 
+ *
  *  Copyright (C) 2010 Andrew Cox
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -16,19 +15,16 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  To contact me, send an email to andrewandstuff@gmail.com or visit 
- *  <http://andrew.swcox.com/Of_Andrew_and_Stuff/Programming.html>
- */package projectprometheus.levels;
+ */
+package com.adcox.projectprometheus.levels;
 
-import projectprometheus.objects.*;
+import com.adcox.projectprometheus.objects.*;
 
 import java.awt.Color;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Random;
-import projectprometheus.objects.Blockade;
-import projectprometheus.userInterface.ProjectPrometheus;
+import com.adcox.projectprometheus.userInterface.ProjectPrometheus;
 
 /**
  *

@@ -15,11 +15,8 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  To contact me, send an email to andrewandstuff@gmail.com or visit 
- *  <http://andrew.swcox.com/Of_Andrew_and_Stuff/Programming.html>
  */
-package projectprometheus.userInterface;
+package com.adcox.projectprometheus.userInterface;
 
 
 /**
@@ -184,27 +181,5 @@ public abstract class AnimationPanel extends JPanel implements KeyListener, Mous
         this.requestFocusInWindow();
         g = renderFrame(g);
     }//=============================================
-    
-    /**
-     * A utilit to open audio clips.
-     * @param fnm String representing the file name of the clip.
-     * @return AudioClip that has been loaded.
-     */
-    public AudioClip loadClip(String fnm){
-        java.applet.AudioClip clip=null;
-        try{
-                    java.io.File file = new java.io.File(fnm);	// get a file for the name provided
-                    if(file.exists()){				// only try to use a real file
-                            clip = java.applet.Applet.newAudioClip(file.toURL()); // get the audio clip
-                    }
-                    else
-                            System.out.println("file="+fnm+" not found");
-            }
-            catch(Exception e){
-                    System.out.println("Error building audio clip from file="+fnm);
-// 			e.printStackTrace();
-            }
-            return clip;
-     }//==========================================
     
 } //-- End AnimationPanel() Class

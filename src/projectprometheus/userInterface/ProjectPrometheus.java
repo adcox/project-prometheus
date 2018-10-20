@@ -15,14 +15,11 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
- *
- *  To contact me, send an email to andrewandstuff@gmail.com or visit 
- *  <http://andrew.swcox.com/Of_Andrew_and_Stuff/Programming.html>
  */
-package projectprometheus.userInterface;
+package com.adcox.projectprometheus.userInterface;
 
-import projectprometheus.objects.*;
-import projectprometheus.levels.*;
+import com.adcox.projectprometheus.objects.*;
+import com.adcox.projectprometheus.levels.*;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -49,9 +46,9 @@ public class ProjectPrometheus extends AnimationPanel{
     
 //***************************************************************************
     //****Home Screen
-    private projectprometheus.objects.Button playBtn = new projectprometheus.objects.Button(437, 400, 30, 70, "PLAY", true);
-    private projectprometheus.objects.Button optionsBtn = new projectprometheus.objects.Button(412, 440, 30, 120, "OPTIONS", true);
-    private projectprometheus.objects.Button backBtn = new projectprometheus.objects.Button(437, 600, 30, 70, "BACK", true);
+    private com.adcox.projectprometheus.objects.Button playBtn = new com.adcox.projectprometheus.objects.Button(437, 400, 30, 70, "PLAY", true);
+    private com.adcox.projectprometheus.objects.Button optionsBtn = new com.adcox.projectprometheus.objects.Button(412, 440, 30, 120, "OPTIONS", true);
+    private com.adcox.projectprometheus.objects.Button backBtn = new com.adcox.projectprometheus.objects.Button(437, 600, 30, 70, "BACK", true);
 
 //***************************************************************************
     //****Options Screen
@@ -83,7 +80,7 @@ public class ProjectPrometheus extends AnimationPanel{
     private int topRow, bottomRow;                      //remember which row is top and which is bottom
 
     //*****************Objects********************
-    Toolbar toolbar;
+    com.adcox.projectprometheus.objects.Toolbar toolbar;
 
     ArrayList<Level> levels = new ArrayList<Level>();
 
@@ -394,10 +391,9 @@ public class ProjectPrometheus extends AnimationPanel{
             g.drawString("The Goa'uld", 200, 150);
             g.setFont(new Font("OCR A std", Font.PLAIN, 24));
             g.drawString("The Goa'uld are a parasitic race of aliens that take over ", 200, 350);
-            g.drawString("humans as host bodies.  They are pure evil, and will stop", 200, 380);
+            g.drawString("human's bodies and minds.  They are pure evil, and will stop", 200, 380);
             g.drawString("at nothing to take over the galaxy.  You must destroy them", 200, 410);
-            g.drawString("before they can destroy us.  I don't think you will find", 200, 440);
-            g.drawString("them too difficult to defeat.", 200, 470);
+            g.drawString("before they can destroy you!  Good luck!", 200, 440);
         }
         if(race == 1){      //REPLICATOR
             g.setColor(Color.lightGray);
@@ -405,19 +401,19 @@ public class ProjectPrometheus extends AnimationPanel{
             g.setFont(new Font("OCR A std", Font.PLAIN, 24));
             g.drawString("The Replicators are a completely robotic race. They are made", 200, 350);
             g.drawString("of small 'blocks'.  When a Replicator is shot, it shatters and", 200, 380);
-            g.drawString("then reforms, or 'replicates'.  These aliens are completely", 200, 410);
-            g.drawString("rutheless.  They will canibalize any technology they can get.", 200, 440);
-            g.drawString("Be careful.", 200, 470);
+            g.drawString("then reforms, or 'replicates'.  These aliens are rutheless", 200, 410);
+            g.drawString("They will canibalize any technology they find, including your ship.", 200, 440);
+            g.drawString("Be careful!", 200, 470);
         }
         if(race == 2){      //ORI
             g.setColor(Color.white);
             g.drawString("The Ori", 200, 150);
             g.setFont(new Font("OCR A std", Font.PLAIN, 24));
-            g.drawString("The Ori are a race of god-like aliens that are made of energy. ", 200, 350);
-            g.drawString("They are the self proclaimed gods of their religion, Origin. They", 200, 380);
+            g.drawString("The Ori are a race of aliens made of energy. They are the", 200, 350);
+            g.drawString("self-proclaimed gods of their religion, Origin, and they", 200, 380);
             g.drawString("have convinced their followers to conquer the galaxy and destroy", 200, 410);
-            g.drawString("all non-believers.  We have not accepted their religion, and as such", 200, 440);
-            g.drawString("they wish to destroy us.  You are our last line of defense.  Good luck.", 200, 470);
+            g.drawString("all non-believers. We have not accepted their doctrine, and as such,", 200, 440);
+            g.drawString("they wish to destroy us. You are our last line of defense!", 200, 470);
         }
 
         g.setFont(new Font("OCR A std", Font.PLAIN, 24));
