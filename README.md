@@ -1,4 +1,5 @@
 # Project Prometheus
+![Project Prometheus Gameplay](img/play.png)
 A space invaders game thematically based on the popular TV show Stargate SG-1. The progression of levels follows the general story of the show; initially, you battle Goa'uld aliens. After defeating that race, you face increasingly difficult foes: first, the Replicators, next, the Ori.
 
 ## Controls
