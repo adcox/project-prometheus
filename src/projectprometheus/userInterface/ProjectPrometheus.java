@@ -40,7 +40,7 @@ public class ProjectPrometheus extends AnimationPanel{
     public final int MAX_POWER_UP = 5;                  //maximum amount of power ups the user can have
     public final int TIME_STOP_LENGTH = 150;
     public final int NUM_STARS = 400;
-    static public enum ScreenMode{HOME_SCREEN, GAME_PLAY, SPLASH, OPTIONS};
+    public enum ScreenMode{HOME_SCREEN, GAME_PLAY, SPLASH, OPTIONS};
 
     private ScreenMode mode = ScreenMode.HOME_SCREEN;                //start out in HOME_SCREEN mode
     
@@ -94,7 +94,7 @@ public class ProjectPrometheus extends AnimationPanel{
     ArrayList<String> newMessages = new ArrayList<String>();
 
     Font bigFont = new Font("OCR A Std",Font.PLAIN , 100);
-
+    public static Color lightBlue = new Color(48, 127, 255);
 
     public ProjectPrometheus(){
         super("Project Prometheus", P_WIDTH, P_HEIGHT);
@@ -338,36 +338,26 @@ public class ProjectPrometheus extends AnimationPanel{
      */
     private void drawString(String string, Graphics2D g){
         //display the name of the level
-        g.setColor(Color.blue);
+        g.setColor(lightBlue);
         g.setFont(bigFont);
         g.drawString(string, P_WIDTH/2 - (string.length()/2)*51, P_HEIGHT/2);
     }//===========================================
 
     private String namePowerUp(int powerUpIndex){
-        if(powerUpIndex == 0)
-            return "Vertical Burst";
-        if(powerUpIndex == 1)
-            return "Horizontal Left";
-        if(powerUpIndex == 2)
-            return "Horizontal Right";
-        if(powerUpIndex == 3)
-            return "Diagonal Burst";
-        if(powerUpIndex == 4)
-            return "Disintegrator Pulse";
-        if(powerUpIndex == 5)
-            return "Disruptor Pulse";
-        if(powerUpIndex == 6)
-            return "Lightning Pulse";
-        if(powerUpIndex == 7)
-            return "Time Stop";
-        if(powerUpIndex == 8)
-            return "Sine Wave Missile";
-        if(powerUpIndex == 9)
-            return "Guided Missile";
-        if(powerUpIndex == 10)
-            return "Arc of Truth";
-
-        return "NOT_YET_CODED:(";
+        switch(powerUpIndex){
+            case 0: return "Vertical Burst";
+            case 1: return "Horizontal Left";
+            case 2: return "Horizontal Right";
+            case 3: return "Diagonal Burst";
+            case 4: return "Disintigrator Pulse";
+            case 5: return "Disruptor Pulse";
+            case 6: return "Lightning Pulse";
+            case 7: return "Time Stop";
+            case 8: return "Sine Wave Missile";
+            case 9: return "Guided Missile";
+            case 10: return "Arc of Truth";
+            default: return "NOT_YET_CODED";
+        }
     }//==========================================
     
     private void drawInstructions(Graphics2D g){
@@ -391,7 +381,7 @@ public class ProjectPrometheus extends AnimationPanel{
             g.drawString("The Goa'uld", 200, 150);
             g.setFont(new Font("OCR A std", Font.PLAIN, 24));
             g.drawString("The Goa'uld are a parasitic race of aliens that take over ", 200, 350);
-            g.drawString("human's bodies and minds.  They are pure evil, and will stop", 200, 380);
+            g.drawString("human bodies and minds.  They are pure evil, and will stop", 200, 380);
             g.drawString("at nothing to take over the galaxy.  You must destroy them", 200, 410);
             g.drawString("before they can destroy you!  Good luck!", 200, 440);
         }
@@ -417,12 +407,12 @@ public class ProjectPrometheus extends AnimationPanel{
         }
 
         g.setFont(new Font("OCR A std", Font.PLAIN, 24));
-        g.setColor(Color.blue);
+        g.setColor(lightBlue);
         g.drawString("Press ENTER to start playing!", 200, 600);
     }//==============================================
 
     private void drawOptions(Graphics2D g){
-        g.setColor(Color.blue);
+        g.setColor(lightBlue);
         g.setFont(new Font("OCR A std", Font.PLAIN, 24));
 
         g.drawString("Toggle antialiasing: Press A", 300, 200);

@@ -51,7 +51,7 @@ public class Toolbar {
         totalPoints = 0;
         livesLeft = 0;
         powerUpAmount = 0;
-        powerUpColor = Color.blue;
+        powerUpColor = ProjectPrometheus.lightBlue;
     }//==============================================
 
     public void updateInformation(int points, int lives, int health, int pwrUpAmnt, Color pwrUpColor, String pwrUpName){
@@ -70,7 +70,7 @@ public class Toolbar {
         g.fillPolygon(rightPoly);
 
         //display points
-        g.setColor(Color.blue);
+        g.setColor(ProjectPrometheus.lightBlue);
         g.setFont(pointFont);
         g.drawString("" + totalPoints, 10, 4*height/5);
 
@@ -88,7 +88,7 @@ public class Toolbar {
         }
         
         //display health
-        g.setColor(Color.blue);
+        g.setColor(ProjectPrometheus.lightBlue);
         int p_width = ProjectPrometheus.P_WIDTH;
         int w = width/8;
         int h = height/8;

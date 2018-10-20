@@ -18,6 +18,8 @@
  */
 package com.adcox.projectprometheus.objects;
 
+import com.adcox.projectprometheus.userInterface.ProjectPrometheus;
+
 import java.awt.Color;
 import java.awt.Graphics2D;
 
@@ -81,7 +83,7 @@ public class Button{
         public void draw(Graphics2D g){
             g.setColor(background);
             g.fillRect(myX, myY, myWidth, myHeight);
-            g.setColor(Color.blue);
+            g.setColor(ProjectPrometheus.lightBlue);
             g.draw3DRect(myX, myY, myWidth, myHeight, true);
             if(myText != null)
                 g.drawString(myText, myX + 5, myY + myHeight - 5);
