@@ -112,19 +112,19 @@ public class ProjectPrometheus extends AnimationPanel{
     }//=====================================
 
     public void initLevels(){
-//        levels.add(new Goauld_Gliders());
-//        levels.add(new Goauld_CargoShips());
-//        levels.add(new Goauld_Alkesh());
-//        levels.add(new Goauld_Motherships());
-//        levels.add(new Goauld_Mixed_5());
-//        levels.add(new Goauld_Mixed_2());
-//        levels.add(new Goauld_Mixed_3());
-//        levels.add(new Goauld_Mixed_4());
-//        levels.add(new Goauld_Mixed());
-//        levels.add(new Goauld_Boss());
-//        levels.add(new Replicator_Cruisers());
-//        levels.add(new Replicator_Warships());
-//        levels.add(new Replicator_Midrange_Warships());
+        levels.add(new Goauld_Gliders());
+        levels.add(new Goauld_CargoShips());
+        levels.add(new Goauld_Alkesh());
+        levels.add(new Goauld_Motherships());
+        levels.add(new Goauld_Mixed_5());
+        levels.add(new Goauld_Mixed_2());
+        levels.add(new Goauld_Mixed_3());
+        levels.add(new Goauld_Mixed_4());
+        levels.add(new Goauld_Mixed());
+        levels.add(new Goauld_Boss());
+        levels.add(new Replicator_Cruisers());
+        levels.add(new Replicator_Warships());
+        levels.add(new Replicator_Midrange_Warships());
         levels.add(new Replicator_Mixed_2());
         levels.add(new Replicator_Mixed_3());
         levels.add(new Replicator_Mixed_5());
